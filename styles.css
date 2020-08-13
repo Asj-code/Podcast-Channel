@@ -1,0 +1,113 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px; 
+}
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-bar ul {
+    float: right;
+}
+
+.nav-bar li {
+    display: inline-flex;
+    margin: 0 30px 10px 0;
+    text-decoration: none;
+}
+
+/* Main Section */
+
+h1, h2 {
+    font-family: 'IBMPlex Sans', sans-serif;
+    margin: 50px 0 30px 0;
+    font-size: 36px;
+    font-weight: 100;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.main-content p {
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.main-content button {
+    margin-top: 40px;
+    background: #00F3BB;
+    width: 100%;
+    height: 50px;
+}
+
+.main-content a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* Episodes Section */
+
+.episodes-content img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Phone Section */
+.phone-img-content img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    
+}
+
+/* Images Section */
+.imgs-content img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    
+}
+
+/* Icons Section */
+.icons-content {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/* Footer Scetion */
+footer {
+    display: block;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 30px 10px 0;
+    text-decoration: none;
+}
+
