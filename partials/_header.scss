@@ -1,0 +1,42 @@
+/* Navigation Bar */
+.logo {
+    img {
+    margin: 5px 10px;}
+}
+
+nav {
+    height: 30px;
+    width: 100%;
+}
+
+.nav-bar {
+    ul {
+    float: right;
+    }
+    li {
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+    color: #00F3BB;
+    cursor: pointer;
+    text-decoration: line-through;
+    &:active {
+    color: rgba(6,10,36,0.56);
+    }
+}}
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: black;
+    float: right;
+    margin: 5px 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
