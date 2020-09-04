@@ -24,6 +24,25 @@ nav {
     text-decoration: line-through;
     &:active {
     color: rgba(6,10,36,0.56);
+    @media (min-width: 320px) and (max-width: 768px){
+        .nav-bar ul {
+            height: 300px;
+            width: 100%;
+            background: #0000EC;
+            text-align: right;
+            display: none;
+        }
+    
+        .nav-bar ul li {
+            color: #FFFFFF;
+            display: block;
+            padding: 20px;
+        }
+    
+        .nav-bar ul li a {
+            font-size: 20px;
+        }
+    }
     }
 }}
 }
@@ -35,8 +54,24 @@ nav {
     margin: 5px 10px;
     cursor: pointer;
     display: none;
+    @media (min-width: 320px) and (max-width: 768px){
+        .checkbtn {
+            display: block;
+        }
+    
+        .checkbtn:active {
+            color: black;
+        }
+}
 }
 
 #check {
     display: none;
+    @media (min-width: 320px) and (max-width: 768px){
+       
+        &:checked {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
 }

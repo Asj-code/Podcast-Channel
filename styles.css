@@ -26,6 +26,23 @@ nav {
 .nav-bar li:hover:active {
   color: rgba(6, 10, 36, 0.56);
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .nav-bar li:hover:active .nav-bar ul {
+    height: 300px;
+    width: 100%;
+    background: #0000EC;
+    text-align: right;
+    display: none;
+  }
+  .nav-bar li:hover:active .nav-bar ul li {
+    color: #FFFFFF;
+    display: block;
+    padding: 20px;
+  }
+  .nav-bar li:hover:active .nav-bar ul li a {
+    font-size: 20px;
+  }
+}
 
 .checkbtn {
   font-size: 20px;
@@ -35,9 +52,23 @@ nav {
   cursor: pointer;
   display: none;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .checkbtn .checkbtn {
+    display: block;
+  }
+  .checkbtn .checkbtn:active {
+    color: black;
+  }
+}
 
 #check {
   display: none;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #check:checked {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 /* Google Font Link */
@@ -56,54 +87,6 @@ body {
   line-height: 22px;
 }
 
-/*
-@media (min-width: 320px){
-    .checkbtn {
-        display: block;
-    }
-
-    .checkbtn:active {
-        color: black;
-    }
-
-    .nav-bar ul {
-        height: 300px;
-        width: 100%;
-        background: #0000EC;
-        text-align: right;
-        display: none;
-    }
-
-    .nav-bar ul li {
-        color: #FFFFFF;
-        display: block;
-        padding: 20px;
-    }
-
-    .nav-bar ul li a {
-        font-size: 20px;
-    }
-
-    #check:checked ~ ul {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-}
-
-
-@media screen and (min-width: 768px){
-
-
-  #main span {
-        padding: 0 300px 0 0;
-    }
-
-    #main p {
-        padding: 0 250px 0 0;
-    }
-
-}    */
 /* Main Section */
 .general-padding {
   padding: 20px;
@@ -123,11 +106,21 @@ h1, h2 {
 #main span {
   text-decoration: line-through;
 }
-#main #main p {
+@media (min-width: 320px) and (max-width: 768px) {
+  #main span {
+    padding: 0 300px 0 0;
+  }
+}
+#main span p {
   font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
   line-height: 22px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  #main span p {
+    padding: 0 250px 0 0;
+  }
 }
 #main .btn {
   background: #00F3BB;
