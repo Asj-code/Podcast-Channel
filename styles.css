@@ -2,72 +2,131 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
 .logo img {
   margin: 5px 10px;
+  float: left;
 }
 
-nav {
-  height: 30px;
+header {
   width: 100%;
+  height: 45px;
+  top: 0;
+  padding: 10px 5%;
 }
-
-.nav-bar ul {
+header nav {
   float: right;
 }
-.nav-bar li {
-  display: inline-block;
-  margin: 0 5px;
-  text-decoration: none;
-  text-transform: uppercase;
+
+/* Hamburguer Menu */
+@media screen and (min-width: 1220px) {
+  .menu {
+    display: inline;
+  }
 }
-.nav-bar li:hover {
-  color: #00F3BB;
+.menu ul {
+  width: 95%;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  overflow: hidden;
+  list-style: none;
+  background: #0000FE;
+  height: 0px;
+}
+@media screen and (min-width: 1220px) {
+  .menu ul {
+    left: 65%;
+    top: 0;
+    overflow: hidden;
+    background: unset;
+    height: unset;
+  }
+}
+.menu li {
+  position: relative;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.menu li:hover {
   cursor: pointer;
+  color: #00F3BB;
   text-decoration: line-through;
 }
-.nav-bar li:hover:active {
+.menu li:active {
   color: rgba(6, 10, 36, 0.56);
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  .nav-bar li:hover:active .nav-bar ul {
-    height: 300px;
-    width: 100%;
-    background: #0000EC;
-    text-align: right;
-    display: none;
-  }
-  .nav-bar li:hover:active .nav-bar ul li {
-    color: #FFFFFF;
-    display: block;
-    padding: 20px;
-  }
-  .nav-bar li:hover:active .nav-bar ul li a {
-    font-size: 20px;
-  }
-}
-
-.checkbtn {
-  font-size: 20px;
-  color: black;
-  float: right;
-  margin: 5px 10px;
-  cursor: pointer;
-  display: none;
-}
-@media (min-width: 320px) and (max-width: 768px) {
-  .checkbtn .checkbtn {
-    display: block;
-  }
-  .checkbtn .checkbtn:active {
+@media screen and (min-width: 1220px) {
+  .menu li {
+    display: inline-block;
     color: black;
   }
 }
-
-#check {
-  display: none;
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 16px 5%;
+  line-height: 28px;
+  display: block;
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  #check:checked {
-    display: block;
-    margin-bottom: 10px;
+@media screen and (min-width: 1220px) {
+  .menu a {
+    font-size: 30px;
+  }
+}
+
+.bars {
+  display: block;
+  width: 25px;
+  height: 2.5px;
+  margin-bottom: 6.5px;
+  position: relative;
+  background: #000;
+  z-index: 1;
+  transform-origin: 3px 0px;
+  transition: transform 0.5s ease, opacity 0.55s ease;
+}
+.bars:first-child {
+  transform-origin: 0% 0%;
+}
+.bars:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+@media screen and (min-width: 1220px) {
+  .bars {
+    display: none;
+  }
+}
+
+/* Input type:checkbox style */
+.button {
+  display: block;
+  width: 40px;
+  height: 32px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:checked ~ ul {
+  height: 240px;
+  transition: height 0.5s ease-in-out;
+}
+.button:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(2px, 1px);
+}
+.button:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.button:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(1px, 0px);
+}
+@media screen and (min-width: 1220px) {
+  .button {
+    display: none;
   }
 }
 
@@ -91,38 +150,37 @@ body {
 .general-padding {
   padding: 20px;
 }
+.general-padding h1 {
+  padding: 0;
+}
+.general-padding h1 span {
+  text-decoration: line-through;
+}
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "IBMPlex Sans", sans-serif;
-  margin: 30px 0;
+  margin: 50px 0;
   font-size: 36px;
   font-weight: 100;
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
-  padding: 0 200px 0 0;
 }
 
-#main span {
-  text-decoration: line-through;
+h3 {
+  font-weight: 550;
+  font-size: 24px;
+  text-align: center;
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  #main span {
-    padding: 0 300px 0 0;
-  }
-}
-#main span p {
+
+p {
   font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
   line-height: 22px;
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  #main span p {
-    padding: 0 250px 0 0;
-  }
-}
-#main .btn {
+
+.btn {
   background: #00F3BB;
   border: none;
   margin-top: 40px;
@@ -138,50 +196,74 @@ h1, h2 {
   line-height: 22px;
   text-decoration: none;
 }
-#main .btn:hover {
+.btn:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
   cursor: pointer;
+}
+@media screen and (min-width: 1220px) {
+  .btn {
+    width: 226px;
+    height: 56px;
+  }
 }
 
 /* Episodes Section */
 #episodes, #latest-news {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  position: relative;
-  z-index: 1;
   transform: skewY(-8deg);
   margin-top: 50px;
   padding-bottom: 130px;
+  /*position: absolute;
+  z-index: -1;*/
 }
 
 .episodes-content, .latest-news-content {
   position: relative;
   transform: skewY(8deg);
-  padding: 40px 0;
 }
 
 #episodes h2 {
   color: #FFFFFF;
+  padding-top: 5%;
 }
 
 #episodes img {
   width: 100%;
   height: 100%;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1220px) {
+  .flexible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 /* Phone Section */
 #we img {
-  display: block;
-  margin: auto;
-  width: 80%;
-  position: absolute;
-  z-index: 2;
-  top: 1430px;
-  left: 10%;
+  width: 100%;
+}
+@media screen and (min-width: 1220px) {
+  #we img {
+    width: 50%;
+  }
 }
 
-.we-content {
-  margin-top: 600px;
+@media screen and (min-width: 1220px) {
+  .we-content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+  }
 }
 
 /* Interviews Section */
@@ -195,6 +277,15 @@ h1, h2 {
   margin-left: 20px;
 }
 
+/*
+@media screen and (min-width: 1220px){
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+}
+*/
 /* Topics Section */
 #topics img {
   display: block;
@@ -212,6 +303,12 @@ h1, h2 {
   margin-top: 15px;
 }
 
+@media screen and (min-width: 1220px) {
+  .topics-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
 /* Latest News */
 #latest-news {
   padding-bottom: 20px;
@@ -220,7 +317,6 @@ h1, h2 {
 #latest-news h2 {
   margin-top: 40px;
   text-align: center;
-  padding: 0 100px;
   color: #FFFFFF;
 }
 
@@ -235,9 +331,9 @@ footer {
   background-color: #FFFFFF;
   width: 100%;
   height: 100px;
-  position: absolute;
-  z-index: 3;
-  bottom: -5580px;
+  /*position: absolute;
+  z-index: 3;*/
+  top: 790%;
 }
 
 footer h3 {
@@ -245,9 +341,12 @@ footer h3 {
   margin-bottom: 20px;
 }
 
+.social-links {
+  margin-bottom: 20px;
+}
 .social-links li {
   display: inline;
-  margin: 0 30px 10px 0;
+  margin: 0 30px 20px 0;
   text-decoration: none;
 }
 

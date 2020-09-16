@@ -19,34 +19,37 @@ body {
 
 .general-padding {
     padding: 20px;
+    h1{
+        padding: 0;
+        span{
+            text-decoration: line-through;
+        }
+    }
+   
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'IBMPlex Sans', sans-serif;
-    margin: 30px 0;
+    margin: 50px 0;
     font-size: 36px;
     font-weight: 100;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
-    padding: 0 200px 0 0;
 }
 
-#main {
-    span {
-    text-decoration: line-through;
-    @media (min-width: 320px) and (max-width: 768px){
-        padding: 0 300px 0 0;
-    }
-    p {
-        font-size: 14px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 22px;
-        @media (min-width: 320px) and (max-width: 768px){
-            padding: 0 250px 0 0;
-        }
-        }
+h3 {
+    font-weight: 550;
+    font-size: 24px;
+    text-align: center;
+}
+
+   
+p {
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
 }
 
 
@@ -69,7 +72,12 @@ h1, h2 {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     color:#FFFFFF;
     cursor: pointer;
+    }
+    @media screen and (min-width: 1220px){
+        width: 226px;
+        height: 56px;
+    }
 }
-}}
+
 
 

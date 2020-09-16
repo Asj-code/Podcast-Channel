@@ -12,79 +12,89 @@
             href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
             integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
             crossorigin="anonymous">
-
     </head>
 
     <body>
 
         <header class="general-padding">
-
-            <nav class="nav-bar">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-               
-                <label class="logo"><img src="assets/logo.svg" alt="logo image"></label>
-                <ul>
-                    <li>
-                        <a href="#episodes"></a>Episodios</li>
-                    <li>
-                        <a href="#we"></a>Nosotros</li>
-                    <li>
-                        <a href="#interviews"></a>Entrevistas</li>
-                    <li>
-                        <a href="#topics"></a>Tópicos</li>
-                </ul>
-            </nav>
+            <img class="logo" src="assets/logo.svg" alt="logo image">
+            <nav>
+                
+                <div class="menu">
+                    <input class="button" type="checkbox" id="checkbox" />
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <ul>
+                        <li>
+                            <a href="#episodes"></a>Episodios</li>
+                        <li>
+                            <a href="#we"></a>Nosotros</li>
+                        <li>
+                            <a href="#interviews"></a>Entrevistas</li>
+                        <li>
+                            <a href="#topics"></a>Tópicos</li>
+                    </ul>
+                </div>
+            </nav>   
         </header>
 
         <section id="main">
-            <div class="general-padding">
-                <h1>Hello
-                    <span>
-                        world</span> pale blue dot.</h1>
+            <div class="general-padding ">
+                <h1>Hello <span>world</span><br> pale blue dot.</h1>
+
                 <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos
-                    los jueves cada 15 dias.
-                </p>
-                <button class="btn">
-                    Conocé más
-                </button>
+                    los jueves cada 15 dias.</p>
+
+                <button class="btn">Conocé más</button>
             </div>
 
             <section id="episodes" class="general-padding">
+                
                 <div class="episodes-content">
-                <h2>Episodios</h2>
-                <div>
-                    <img src="assets/embed1.png" alt="JS Party podcast image">
+                    <h2>Episodios</h2>
+                    <div class="flexible">
+                        <div>
+                            <img src="assets/embed1.png" alt="JS Party podcast image">
+                        </div>
+                        <div>
+                            <img src="assets/embed2.png" alt="Sintax Web Development podcast image">
+                        </div>
+                        <div>
+                            <img src="assets/embed3.png" alt="Rework podcast image">
+                        </div>
+                        <div>
+                            <img src="assets/embed4.png" alt="The Ruby on Rails podcast image">
+                        </div>
+                    </div>
+                    
                 </div>
-                <div>
-                    <img src="assets/embed2.png" alt="Sintax Web Development podcast image">
-                </div>
-                <div>
-                    <img src="assets/embed3.png" alt="Rework podcast image">
-                </div>
-                <div>
-                    <img src="assets/embed4.png" alt="The Ruby on Rails podcast image">
-                </div>
-            </div>
+            
             </section>
 
             <section id="we" class="general-padding">
-                <img src="assets/phone.png" alt="Joseph C. Towler Jr image">
-                <div class="we-content">
-                <h2>De dónde venimos</h2>
-                <p>Our posturings, our imagined self-importance, the delusion that we 
-                    have some privileged position in the universe, are challenged by this
-                    point of pale light. <br> <br> Our planet is a lonely speck in the great 
-                    enveloping cosmic dark. In our obscurity, in all this vastness, the is no hint 
-                    that help will come from elsewhere to save us from ourselves.
-                </p>
-            </div>
+                <div class="flex-container">
+                    <div>
+                        <img src="assets/phone.png" alt="Joseph C. Towler Jr image">
+                    </div>
+                    
+                    <div class="we-content">
+                    <h2>De dónde venimos</h2>
+                    <p>Our posturings, our imagined self-importance, the delusion that we 
+                        have some privileged position in the universe, are challenged by this
+                        point of pale light. <br> <br> Our planet is a lonely speck in the great 
+                        enveloping cosmic dark. In our obscurity, in all this vastness, the is no hint 
+                        that help will come from elsewhere to save us from ourselves.
+                    </p>
+                </div>
+                </div>
+                
             </section>
 
             <section id="interviews">
                 <h2>Invitadas/os estelares</h2>
+               
+                <div class="container">
                 <div>
                     <img src="assets/grace-hopper.png" alt="Grace Hopper working image">
                 </div>
@@ -105,26 +115,31 @@
                         src="assets/first_programmable_general_purpose_computer.png"
                         alt="first_programmable_general_purpose_computer image">
                 </div>
+                </div>
+            
             </section>
 
             <section id="topics" class="general-padding">
                 <h2>Algunos de nuestros temas</h2>
-                <div>
-                    <img src="assets/icon1.svg" alt="icon related to computer science">
-                    <h3>Trabajo remoto</h3>
+                <div class="topics-container">
+                    <div>
+                        <img src="assets/icon1.svg" alt="icon related to computer science">
+                        <h3>Trabajo remoto</h3>
+                    </div>
+                    <div>
+                        <img src="assets/icon2.svg" alt="icon related to computer science">
+                        <h3>Repensando la programación</h3>
+                    </div>
+                    <div>
+                        <img src="assets/icon3.svg" alt="icon related to computer science">
+                        <h3>Bases de código</h3>
+                    </div>
+                    <div>
+                        <img src="assets/icon4.svg" alt="icon related to computer science">
+                        <h3>Seguridad informática</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/icon2.svg" alt="icon related to computer science">
-                    <h3>Repensando la programación</h3>
-                </div>
-                <div>
-                    <img src="assets/icon3.svg" alt="icon related to computer science">
-                    <h3>Bases de código</h3>
-                </div>
-                <div>
-                    <img src="assets/icon4.svg" alt="icon related to computer science">
-                    <h3>Seguridad informática</h3>
-                </div>
+               
             </section>
 
             <section id="latest-news" class="general-padding">
