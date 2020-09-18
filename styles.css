@@ -148,6 +148,11 @@ body {
 .general-padding {
   padding: 20px;
 }
+@media screen and (min-width: 1220px) {
+  .general-padding {
+    padding-left: 100px;
+  }
+}
 .general-padding h1 {
   padding: 0;
 }
@@ -252,9 +257,10 @@ p {
 }
 @media screen and (min-width: 1220px) {
   .we-image {
-    width: 50%;
+    width: 40%;
     position: relative;
     margin-top: -50px;
+    margin-left: 100px;
   }
 }
 
@@ -263,8 +269,9 @@ p {
 }
 @media screen and (min-width: 1220px) {
   .we-content {
-    width: 50%;
-    margin-top: 0;
+    width: 40%;
+    margin-top: 30px;
+    padding-right: 130px;
   }
 }
 
@@ -281,10 +288,6 @@ p {
   }
 }
 
-#interviews h2 {
-  margin-left: 20px;
-}
-
 @media screen and (min-width: 1220px) {
   .flex-container-bottom {
     display: flex;
@@ -297,6 +300,11 @@ p {
   margin: auto;
   text-align: center;
   padding: 50px 30px 0 30px;
+}
+@media screen and (min-width: 1220px) {
+  #topics img {
+    margin: 30px 60px;
+  }
 }
 #topics #topics h3 {
   font-family: "IBMPlex Sans", sans-serif;
@@ -312,6 +320,7 @@ p {
   .topics-container {
     display: flex;
     flex-flow: row wrap;
+    height: 300px;
   }
 }
 /* Latest News */

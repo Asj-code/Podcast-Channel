@@ -19,6 +19,9 @@ body {
 
 .general-padding {
     padding: 20px;
+    @media screen and (min-width: 1220px){
+        padding-left: 100px;
+    }
     h1{
         padding: 0;
         span{
