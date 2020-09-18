@@ -3,17 +3,19 @@
     display: block;
     margin: auto;
     width: 100%;
+    @media screen and (min-width: 1220px){
+        width: 30%;
+        margin: 0;
+    }
 }
 
 #interviews h2 {
     margin-left: 20px;
 }
-/*
+
 @media screen and (min-width: 1220px){
-    .container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-   
+   .flex-container-bottom {
+       display: flex;
+       flex-flow: row wrap;
+   }
 }
-*/
