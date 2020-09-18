@@ -1,18 +1,18 @@
 /* Interviews Section */
-#interviews img {
+#interviews {
+    img {
     display: block;
     margin: auto;
     width: 100%;
-    @media screen and (min-width: 1220px){
-        width: 30%;
-        margin: 0;
-        
+    }
+    h2 {
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (min-width: 1220px){
-   .flex-container-bottom {
-       display: flex;
-       flex-flow: row wrap;
+   .grid-container {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
    }
 }

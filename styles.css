@@ -1,25 +1,34 @@
 /* Navigation Bar */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
-.logo img {
+.logo {
   margin: 5px 10px;
   float: left;
+}
+@media screen and (min-width: 1220px) {
+  .logo {
+    margin: 30px;
+  }
 }
 
 header {
   width: 100%;
   height: 100px;
   top: 0;
+  padding: 20px;
 }
 header nav {
   float: right;
 }
 
-/* Hamburguer Menu */
 @media screen and (min-width: 1220px) {
-  .menu {
-    display: inline;
+  .flex-header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
   }
 }
+
+/* Hamburguer Menu */
 .menu ul {
   width: 95%;
   position: absolute;
@@ -36,6 +45,10 @@ header nav {
     overflow: hidden;
     background: unset;
     height: unset;
+    margin-left: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
   }
 }
 .menu li {
@@ -145,35 +158,33 @@ body {
 }
 
 /* Main Section */
-.general-padding {
-  padding: 20px;
-}
-@media screen and (min-width: 1220px) {
-  .general-padding {
-    padding-left: 100px;
-  }
-}
-.general-padding h1 {
-  padding: 0;
-}
-.general-padding h1 span {
-  text-decoration: line-through;
-}
-
-h1, h2, h3 {
+h1, h2 {
   font-family: "IBMPlex Sans", sans-serif;
-  margin: 10px 0;
   font-size: 36px;
   font-weight: 100;
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
+  margin: 20px 0;
+  width: 70%;
+}
+@media screen and (min-width: 1220px) {
+  h1, h2 {
+    padding-left: 150px;
+    margin-top: 100px;
+  }
 }
 
 h3 {
   font-weight: 550;
   font-size: 24px;
   text-align: center;
+  font-family: "IBMPlex Sans", sans-serif;
+  padding: 30px;
+}
+
+span {
+  text-decoration: line-through;
 }
 
 p {
@@ -181,12 +192,19 @@ p {
   color: #060A24;
   letter-spacing: 0;
   line-height: 22px;
+  padding: 20px;
+}
+@media screen and (min-width: 1220px) {
+  p {
+    padding: 30px 0 0 150px;
+    width: 100%;
+  }
 }
 
 .btn {
   background: #00F3BB;
   border: none;
-  margin-top: 40px;
+  margin: 30px 10px;
   width: 100%;
   height: 50px;
   font-family: "IBM Plex Mono";
@@ -208,6 +226,7 @@ p {
   .btn {
     width: 226px;
     height: 56px;
+    margin-left: 150px;
   }
 }
 
@@ -226,18 +245,27 @@ p {
 /* Episodes Section */
 #episodes h2 {
   color: #FFFFFF;
-  padding-top: 5%;
+  padding-top: 50px;
+}
+@media screen and (min-width: 1220px) {
+  #episodes h2 {
+    padding-top: 100px;
+  }
 }
 
 #episodes iframe {
   padding: 40px 0;
 }
+@media screen and (min-width: 1220px) {
+  #episodes iframe {
+    padding: 40px 40px;
+  }
+}
 
 @media screen and (min-width: 1220px) {
-  .flexible {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .grid-episodes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -249,6 +277,10 @@ p {
   }
 }
 
+.we-image-container {
+  width: 50%;
+}
+
 .we-image {
   width: 100%;
   position: absolute;
@@ -257,10 +289,10 @@ p {
 }
 @media screen and (min-width: 1220px) {
   .we-image {
-    width: 40%;
+    width: 70%;
     position: relative;
     margin-top: -50px;
-    margin-left: 100px;
+    margin-left: 150px;
   }
 }
 
@@ -269,9 +301,8 @@ p {
 }
 @media screen and (min-width: 1220px) {
   .we-content {
-    width: 40%;
     margin-top: 30px;
-    padding-right: 130px;
+    width: 40%;
   }
 }
 
@@ -281,17 +312,14 @@ p {
   margin: auto;
   width: 100%;
 }
-@media screen and (min-width: 1220px) {
-  #interviews img {
-    width: 30%;
-    margin: 0;
-  }
+#interviews h2 {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1220px) {
-  .flex-container-bottom {
-    display: flex;
-    flex-flow: row wrap;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 /* Topics Section */
@@ -299,12 +327,7 @@ p {
   display: block;
   margin: auto;
   text-align: center;
-  padding: 50px 30px 0 30px;
-}
-@media screen and (min-width: 1220px) {
-  #topics img {
-    margin: 30px 60px;
-  }
+  padding: 50px 30px;
 }
 #topics #topics h3 {
   font-family: "IBMPlex Sans", sans-serif;
@@ -318,42 +341,48 @@ p {
 
 @media screen and (min-width: 1220px) {
   .topics-container {
-    display: flex;
-    flex-flow: row wrap;
-    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /* Latest News */
 #latest-news {
   padding-bottom: 40px;
+  height: 300px;
 }
 @media screen and (min-width: 1220px) {
   #latest-news {
     height: 450px;
+    margin-top: 100px;
   }
 }
 
 #latest-news h2 {
   margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
   color: #FFFFFF;
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 1220px) {
   #latest-news h2 {
-    padding-top: 60px;
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 0;
   }
 }
 
 #latest-news button {
-  margin: 10px 0 50px 0;
+  margin: 30px 30px;
+  width: 80%;
 }
 @media screen and (min-width: 1220px) {
   #latest-news button {
     width: 30%;
-    margin: 60px 430px;
+    margin-left: 30em;
+    margin-right: auto;
   }
 }
 
@@ -372,7 +401,7 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 150px;
-    margin-top: -70px;
+    margin-top: -75px;
     align-items: center;
   }
 }
@@ -380,11 +409,11 @@ footer {
 footer h3 {
   font-weight: 100;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .social-links {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .social-links li {
   display: inline;

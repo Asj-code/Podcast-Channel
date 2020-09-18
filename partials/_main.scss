@@ -17,49 +17,52 @@ body {
 
 /* Main Section */
 
-.general-padding {
-    padding: 20px;
-    @media screen and (min-width: 1220px){
-        padding-left: 100px;
-    }
-    h1{
-        padding: 0;
-        span{
-            text-decoration: line-through;
-        }
-    }
-   
-}
-
-h1, h2, h3 {
+h1, h2 {
     font-family: 'IBMPlex Sans', sans-serif;
-    margin: 10px 0;
     font-size: 36px;
     font-weight: 100;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
+    margin: 20px 0;
+    width: 70%;
+    @media screen and (min-width: 1220px){
+        padding-left: 150px;
+        margin-top: 100px;
+    }
 }
+
+
 
 h3 {
     font-weight: 550;
     font-size: 24px;
     text-align: center;
+    font-family: 'IBMPlex Sans', sans-serif;
+    padding: 30px;
 }
 
+span{
+    text-decoration: line-through;
+}
    
 p {
     font-size: 14px;
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
+    padding: 20px;
+    @media screen and (min-width: 1220px){
+        padding: 30px 0 0 150px;
+        width: 100%;
+    }
 }
 
 
 .btn {
     background: #00F3BB;
     border: none;
-    margin-top: 40px;
+    margin: 30px 10px;
     width: 100%;
     height: 50px;
     font-family: 'IBM Plex Mono';
@@ -79,6 +82,7 @@ p {
     @media screen and (min-width: 1220px){
         width: 226px;
         height: 56px;
+        margin-left: 150px;
     }
 }
 
