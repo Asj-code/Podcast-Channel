@@ -177,7 +177,6 @@ h1, h2 {
 }
 
 h3 {
-  font-weight: 550;
   font-size: 24px;
   text-align: center;
   font-family: "IBMPlex Sans", sans-serif;
@@ -256,6 +255,9 @@ p {
 
 #episodes iframe {
   padding: 40px 20px;
+  width: 100%;
+  height: 230px;
+  border: none;
 }
 @media screen and (min-width: 1220px) {
   #episodes iframe {
@@ -332,7 +334,6 @@ p {
 #topics #topics h3 {
   font-family: "IBMPlex Sans", sans-serif;
   font-size: 24px;
-  font-weight: 500;
   color: #060A24;
   letter-spacing: 0;
   text-align: center;
