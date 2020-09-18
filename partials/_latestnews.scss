@@ -1,6 +1,6 @@
 /* Latest News */
 #latest-news {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     @media screen and (min-width:1220px){
         height: 350px;
     }
@@ -11,6 +11,9 @@
     margin-top: 40px;
     text-align: center;
     color: #FFFFFF;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 
