@@ -57,20 +57,6 @@ header nav {
   text-transform: uppercase;
   color: #ffffff;
 }
-.menu li:hover {
-  cursor: pointer;
-  color: #00F3BB;
-  text-decoration: line-through;
-}
-.menu li:active {
-  color: rgba(6, 10, 36, 0.56);
-}
-@media screen and (min-width: 1220px) {
-  .menu li {
-    display: inline-block;
-    color: black;
-  }
-}
 .menu a {
   position: relative;
   text-decoration: none;
@@ -78,10 +64,21 @@ header nav {
   padding: 16px 5%;
   line-height: 28px;
   display: block;
+  font-size: 16px;
+}
+.menu a:hover {
+  cursor: pointer;
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+.menu a:active {
+  color: rgba(6, 10, 36, 0.56);
 }
 @media screen and (min-width: 1220px) {
   .menu a {
-    font-size: 30px;
+    display: inline-block;
+    color: #060A24;
+    margin: 30px 30px 0;
   }
 }
 
