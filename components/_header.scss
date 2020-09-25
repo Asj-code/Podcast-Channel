@@ -84,6 +84,7 @@ header {
     width: 25px;
     height: 2.5px;
     margin-bottom: 6.5px;
+    margin-right: 10px;
     position: relative;
     background: #000;
     z-index: 1;
@@ -98,6 +99,9 @@ header {
     }
     @media screen and (min-width: 1220px){
         display: none;
+    }
+    @media screen and (min-width: 768px){
+        margin-right: 20px;
     }
 }
 

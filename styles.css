@@ -87,6 +87,7 @@ header nav {
   width: 25px;
   height: 2.5px;
   margin-bottom: 6.5px;
+  margin-right: 10px;
   position: relative;
   background: #000;
   z-index: 1;
@@ -102,6 +103,11 @@ header nav {
 @media screen and (min-width: 1220px) {
   .bars {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bars {
+    margin-right: 20px;
   }
 }
 
@@ -228,9 +234,8 @@ p {
 }
 @media screen and (min-width: 768px) {
   .btn {
-    width: 95%;
-    margin-left: 15px;
-    margin-top: 40px;
+    margin-top: 60px;
+    width: 180px;
   }
 }
 
