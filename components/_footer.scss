@@ -4,18 +4,17 @@ footer {
     text-align: center;
     background-color: #FFFFFF;
     width: 100%;
-    margin-top: -30px;
+    margin-top: -20px;
     background-color: white;
     position: absolute;
+    padding-top: 20px;
     @media screen and (min-width:1220px){
         display: flex;
         justify-content: space-between;
         height: 150px;
-        margin-top: -75px;
+        position: absolute;
+        margin-top: -85px;
         align-items: center;
-    }
-    @media screen and (min-width: 768px){
-        margin-top: -50px;
     }
 }
 
@@ -23,7 +22,7 @@ footer {
     h3 {
     font-weight: 100;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     }
 }
 

@@ -96,11 +96,17 @@ p {
     transform: skewY(-6deg);
     margin-top: 50px;
     padding-bottom: 130px;
+    @media screen and (min-width: 768px){
+        transform: skewY(-3deg);
+    }
 }
 
 .episodes-content, .latest-news-content {
     position: relative;
     transform: skewY(6deg);
+    @media screen and (min-width: 768px){
+        transform: skewY(3deg);
+    }
     
 }
 
