@@ -446,5 +446,11 @@ footer h3 {
   margin: 30px 20px;
   text-decoration: none;
 }
+.social-links li a {
+  color: black;
+}
+.social-links li a:hover {
+  color: #00F0B8;
+}
 
 /*# sourceMappingURL=styles.css.map */
