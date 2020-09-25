@@ -4,7 +4,6 @@
   margin: 5px 10px;
   float: left;
 }
-
 @media screen and (min-width: 1220px) {
   .logo {
     margin: 30px;
@@ -17,23 +16,15 @@ header {
   top: 0;
   padding: 20px;
 }
-
 header nav {
   float: right;
 }
 
 @media screen and (min-width: 1220px) {
   .flex-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: row;
+    justify-content: space-between;
   }
 }
 
@@ -48,7 +39,6 @@ header nav {
   background: #0000FE;
   height: 0px;
 }
-
 @media screen and (min-width: 1220px) {
   .menu ul {
     top: 0;
@@ -56,26 +46,17 @@ header nav {
     background: unset;
     height: unset;
     margin-left: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-flow: row;
+    justify-content: flex-end;
   }
 }
-
 .menu li {
   position: relative;
   padding: 0 20px;
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .menu a {
   position: relative;
   text-decoration: none;
@@ -85,17 +66,14 @@ header nav {
   display: block;
   font-size: 16px;
 }
-
 .menu a:hover {
   cursor: pointer;
   color: #00F3BB;
   text-decoration: line-through;
 }
-
 .menu a:active {
   color: rgba(6, 10, 36, 0.56);
 }
-
 @media screen and (min-width: 1220px) {
   .menu a {
     display: inline-block;
@@ -112,24 +90,15 @@ header nav {
   position: relative;
   background: #000;
   z-index: 1;
-  -webkit-transform-origin: 3px 0px;
-          transform-origin: 3px 0px;
-  -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s ease;
-  transition: opacity 0.55s ease, -webkit-transform 0.5s ease;
+  transform-origin: 3px 0px;
   transition: transform 0.5s ease, opacity 0.55s ease;
-  transition: transform 0.5s ease, opacity 0.55s ease, -webkit-transform 0.5s ease;
 }
-
 .bars:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
-
 .bars:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
-
 @media screen and (min-width: 1220px) {
   .bars {
     display: none;
@@ -145,34 +114,24 @@ header nav {
   z-index: 2;
   position: absolute;
 }
-
 .button:hover {
   cursor: pointer;
 }
-
 .button:checked ~ ul {
   height: 240px;
-  -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
 }
-
 .button:checked ~ span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(2px, 1px);
-          transform: rotate(45deg) translate(2px, 1px);
+  transform: rotate(45deg) translate(2px, 1px);
 }
-
 .button:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 .button:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(1px, 0px);
-          transform: rotate(-45deg) translate(1px, 0px);
+  transform: rotate(-45deg) translate(1px, 0px);
 }
-
 @media screen and (min-width: 1220px) {
   .button {
     display: none;
@@ -183,13 +142,12 @@ header nav {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
 }
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
@@ -198,7 +156,7 @@ body {
 
 /* Main Section */
 h1, h2 {
-  font-family: 'IBMPlex Sans', sans-serif;
+  font-family: "IBMPlex Sans", sans-serif;
   font-size: 36px;
   font-weight: 100;
   color: #060A24;
@@ -208,7 +166,6 @@ h1, h2 {
   width: 80%;
   padding-left: 20px;
 }
-
 @media screen and (min-width: 1220px) {
   h1, h2 {
     padding-left: 150px;
@@ -219,7 +176,7 @@ h1, h2 {
 h3 {
   font-size: 24px;
   text-align: center;
-  font-family: 'IBMPlex Sans', sans-serif;
+  font-family: "IBMPlex Sans", sans-serif;
   padding: 30px;
 }
 
@@ -234,7 +191,6 @@ p {
   line-height: 22px;
   padding: 20px;
 }
-
 @media screen and (min-width: 1220px) {
   p {
     padding: 30px 0 0 150px;
@@ -248,7 +204,7 @@ p {
   margin: 30px 20px;
   width: 90%;
   height: 50px;
-  font-family: 'IBM Plex Mono';
+  font-family: "IBM Plex Mono";
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -258,13 +214,11 @@ p {
   line-height: 22px;
   text-decoration: none;
 }
-
 .btn:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
   cursor: pointer;
 }
-
 @media screen and (min-width: 1220px) {
   .btn {
     width: 226px;
@@ -275,16 +229,14 @@ p {
 
 #episodes, #latest-news {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-transform: skewY(-6deg);
-          transform: skewY(-6deg);
+  transform: skewY(-6deg);
   margin-top: 50px;
   padding-bottom: 130px;
 }
 
 .episodes-content, .latest-news-content {
   position: relative;
-  -webkit-transform: skewY(6deg);
-          transform: skewY(6deg);
+  transform: skewY(6deg);
 }
 
 /* Episodes Section */
@@ -292,7 +244,6 @@ p {
   color: #FFFFFF;
   padding-top: 50px;
 }
-
 @media screen and (min-width: 1220px) {
   #episodes h2 {
     padding-top: 100px;
@@ -307,7 +258,6 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
 @media screen and (min-width: 1220px) {
   #episodes iframe {
     padding: 40px 40px;
@@ -316,23 +266,16 @@ p {
 
 @media screen and (min-width: 1220px) {
   .grid-episodes-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Phone Section */
 @media screen and (min-width: 1220px) {
   .we-flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
   }
 }
 
@@ -345,7 +288,6 @@ p {
   position: absolute;
   margin-top: -650px;
 }
-
 @media screen and (min-width: 1220px) {
   .we-image {
     width: 70%;
@@ -358,7 +300,6 @@ p {
 .we-content {
   margin-top: 40em;
 }
-
 @media screen and (min-width: 1220px) {
   .we-content {
     margin-top: 30px;
@@ -372,20 +313,16 @@ p {
   margin: auto;
   width: 100%;
 }
-
 #interviews h2 {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1220px) {
   .grid-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
 /* Topics Section */
 #topics img {
   display: block;
@@ -393,9 +330,8 @@ p {
   text-align: center;
   padding: 50px 30px;
 }
-
 #topics #topics h3 {
-  font-family: 'IBMPlex Sans', sans-serif;
+  font-family: "IBMPlex Sans", sans-serif;
   font-size: 24px;
   color: #060A24;
   letter-spacing: 0;
@@ -405,19 +341,17 @@ p {
 
 @media screen and (min-width: 1220px) {
   .topics-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
-
 /* Latest News */
 #latest-news {
   padding-bottom: 40px;
   height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 @media screen and (min-width: 1220px) {
   #latest-news {
     height: 450px;
@@ -431,29 +365,24 @@ p {
   text-align: center;
   color: #FFFFFF;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
-
 @media screen and (min-width: 1220px) {
   #latest-news h2 {
     padding-top: 100px;
-    width: 100%;
-    padding-left: 0;
   }
 }
 
 #latest-news button {
-  margin: 30px 30px;
   width: 80%;
 }
-
 @media screen and (min-width: 1220px) {
   #latest-news button {
     width: 30%;
-    margin-left: 27em;
-    margin-right: auto;
   }
+}
+
+.latest-news-content {
+  text-align: center;
 }
 
 /* Footer Scetion */
@@ -466,20 +395,13 @@ footer {
   background-color: white;
   position: absolute;
 }
-
 @media screen and (min-width: 1220px) {
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     height: 150px;
     margin-top: -75px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -492,10 +414,10 @@ footer h3 {
 .social-links {
   margin: 20px 0;
 }
-
 .social-links li {
   display: inline;
   margin: 30px 20px;
   text-decoration: none;
 }
+
 /*# sourceMappingURL=styles.css.map */
