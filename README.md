@@ -24,5 +24,6 @@ navigation, compatibility with multiple browsers and devices.
 #### About this project:
 - Libraries are not allow
 - Mobile First Design 
-- Multiplatform Responsive Design 
+- Multiplatform Responsive Design
+- Spotify API consumed
 - GitHub Pages Hosting
