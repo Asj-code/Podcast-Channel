@@ -4,22 +4,24 @@
 
 ### [Take a look!](https://asj-code.github.io/Podcast-Channel/)
 
-:bulb: The challenge is focused on the layout of the landing page of a Podcast channel, 
+The challenge is focused on the layout of the landing page of a Podcast channel, 
 following the visual guidelines of a given user interface and developing functionalities for content playback, 
 navigation, compatibility with multiple browsers and devices.
 
 #### Programming languages used to create this site:
-- HTML5
-- CSS3
+:small_orange_diamond:  HTML5
+
+:small_orange_diamond:  CSS3
 
 #### CSS3 Preprocessor
-- SASS
+:small_orange_diamond:  SASS
 
 #### Resources
-- Google Fonts
-- Font Awesome
+:small_orange_diamond:  Google Fonts
 
-### About this project:
+:small_orange_diamond:  Font Awesome
+
+#### About this project:
 - Libraries are not allow
 - Mobile First Design 
 - Multiplatform Responsive Design 
